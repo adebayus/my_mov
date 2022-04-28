@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splash_navigation"
+    app:startDestination="@id/splashFragment">
+    <!--    app:startDestination="@id/bottom_nav_navigation">-->
+    <!--    app:startDestination="@id/splashFragment"-->
+    <fragment
+        android:id="@+id/onBoardingOne"
+        android:name="com.sebade.relasiroom.ui.intro.OnBoardingOne"
+        android:label="fragment_on_boarding_one"
+        tools:layout="@layout/fragment_on_boarding_one">
+        <action
+            android:id="@+id/action_onBoardingOne_to_onBoardingTwo"
+            app:destination="@id/onBoardingTwo" />
+        <action
+            android:id="@+id/action_onBoardingOne_to_registerNavigation"
+            app:destination="@id/register_navigation.xml"
+            app:popUpTo="@id/onBoardingOne"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/onBoardingTwo"
+        android:name="com.sebade.relasiroom.ui.intro.OnBoardingTwo"
+        android:label="fragment_on_boarding_two"
+        tools:layout="@layout/fragment_on_boarding_two">
+        <action
+            android:id="@+id/action_onBoardingTwo_to_onBoardingThree"
+            app:destination="@id/onBoardingThree"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/onBoardingThree"
+        android:name="com.sebade.relasiroom.ui.intro.OnBoardingThree"
+        android:label="fragment_on_boarding_three"
+        tools:layout="@layout/fragment_on_boarding_three">
+        <action
+            android:id="@+id/action_onBoardingThree_to_registerHostActivity"
+            app:destination="@id/register_navigation.xml"
+            app:launchSingleTop="false"
+            app:popUpTo="@id/onBoardingOne"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.sebade.relasiroom.ui.intro.SplashScreenFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash_screen">
+        <action
+            android:id="@+id/action_splashFragment_to_onBoardingOne"
+            app:destination="@id/onBoardingOne"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <include app:graph="@navigation/auth_navigation" />
+    <include app:graph="@navigation/bottom_nav_navigation" />
+</navigation>

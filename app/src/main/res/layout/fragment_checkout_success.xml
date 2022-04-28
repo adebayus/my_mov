@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.sebade.relasiroom.ui.homepage.checkout.checkoutsuccess.CheckoutSuccessViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/darkBlue"
+        android:padding="@dimen/layout_padding"
+        tools:context=".ui.homepage.checkout.checkoutsuccess.FragmentCheckoutSuccess">
+
+        <ImageView
+            android:id="@+id/imageView"
+            style="@style/obimagestyle"
+            android:layout_marginTop="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ob_three" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/obtextheader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="46dp"
+            android:text="Happy Watching"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/obtextsuheader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Tiket telah berhasil dibeli dan selamat menikmati film"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_lewatiperkenalan"
+            style="@style/obbuttonstyle.buttonblue"
+            android:layout_marginBottom="50dp"
+            android:onClick="@{() -> viewModel.btnHome()}"
+            android:text="Home"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_lanjutkan"
+            style="@style/obbuttonstyle.buttonpink"
+            android:layout_marginBottom="16dp"
+            android:text="Lihat Tiket"
+            app:layout_constraintBottom_toTopOf="@+id/btn_lewatiperkenalan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:onClick="@{() -> viewModel.btnDetailFilm()}"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+
+

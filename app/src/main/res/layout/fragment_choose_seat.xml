@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.sebade.relasiroom.ui.homepage.choseseat.ChooseSeatViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.homepage.choseseat.ChooseSeatFragment"
+        android:background="@color/darkBlue"
+        >
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="LAYAR BIOSKOP"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+            <ImageView
+                android:id="@+id/seat_D1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/kursi_kosong"
+                app:layout_constraintBottom_toBottomOf="@+id/seat_D2"
+                app:layout_constraintEnd_toStartOf="@+id/seat_D2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/seat_D2"
+                app:setDrawable="@{viewModel.rowD.seatOne.isBooked}" />
+
+            <ImageView
+                android:id="@+id/seat_D2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/kursi_kosong"
+                app:layout_constraintBottom_toBottomOf="@+id/kursi_D"
+                app:layout_constraintEnd_toStartOf="@+id/kursi_D"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/seat_D1"
+                app:layout_constraintTop_toTopOf="@+id/kursi_D"
+                app:setDrawable="@{viewModel.rowD.seatTwo.isBooked}" />
+
+            <ImageView
+                android:id="@+id/seat_D4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/kursi_kosong"
+                app:layout_constraintBottom_toBottomOf="@+id/seat_D3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/seat_D3"
+                app:layout_constraintTop_toTopOf="@+id/seat_D3"
+                app:setDrawable="@{viewModel.rowD.seatFour.isBooked}" />
+
+            <ImageView
+                android:id="@+id/seat_D3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/kursi_kosong"
+                app:layout_constraintBottom_toBottomOf="@+id/kursi_D"
+                app:layout_constraintEnd_toStartOf="@+id/seat_D4"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toEndOf="@+id/kursi_D"
+                app:layout_constraintTop_toTopOf="@+id/kursi_D"
+                app:setDrawable="@{viewModel.rowD.seatThree.isBooked}" />
+
+            <ImageView
+                android:id="@+id/seat_C1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/kursi_kosong"
+                app:layout_constraintBottom_toBottomOf="@+id/seat_C2"
+                app:layout_constraintEnd_toStartOf="@+id/seat_C2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/seat_C2"
+                app:setDrawable="@{viewModel.rowC.seatOne.isBooked}" />
+
+            <ImageView
+                android:id="@+id/seat_C2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/kursi_kosong"
+                app:layout_constraintBottom_toBottomOf="@+id/kursi_C"
+                app:layout_constraintEnd_toStartOf="@+id/kursi_C"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/seat_C1"
+                app:layout_constraintTop_toTopOf="@+id/kursi_C"
+                app:setDrawable="@{viewModel.rowC.seatTwo.isBooked}" />
+
+            <ImageView
+                android:id="@+id/seat_C3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/kursi_kosong"
+                app:layout_constraintBottom_toBottomOf="@+id/kursi_C"
+                app:layout_constraintEnd_toStartOf="@+id/seat_C4"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toEndOf="@+id/kursi_C"
+                app:layout_constraintTop_toTopOf="@+id/kursi_C"
+                app:setDrawable="@{viewModel.rowC.seatThree.isBooked}" />
+
+            <ImageView
+                android:id="@+id/seat_C4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/kursi_kosong"
+                app:layout_constraintBottom_toBottomOf="@+id/seat_C3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/seat_C3"
+                app:layout_constraintTop_toTopOf="@+id/seat_C3"
+                app:setDrawable="@{viewModel.rowC.seatFour.isBooked}" />
+
+            <ImageView
+                android:id="@+id/seat_B1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/kursi_kosong"
+                app:layout_constraintBottom_toBottomOf="@+id/seat_B2"
+                app:layout_constraintEnd_toStartOf="@+id/seat_B2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/seat_B2"
+                app:setDrawable="@{viewModel.rowB.seatOne.isBooked}" />
+
+            <ImageView
+                android:id="@+id/seat_B2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/kursi_kosong"
+                app:layout_constraintBottom_toBottomOf="@+id/kursi_B"
+                app:layout_constraintEnd_toStartOf="@+id/kursi_B"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/seat_B1"
+                app:layout_constraintTop_toTopOf="@+id/kursi_B"
+                app:setDrawable="@{viewModel.rowB.seatTwo.isBooked}" />
+
+            <ImageView
+                android:id="@+id/seat_B4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/kursi_kosong"
+                app:layout_constraintBottom_toBottomOf="@+id/seat_B3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/seat_B3"
+                app:layout_constraintTop_toTopOf="@+id/seat_B3"
+                app:setDrawable="@{viewModel.rowB.seatFour.isBooked}" />
+
+            <ImageView
+                android:id="@+id/seat_B3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/kursi_kosong"
+                app:layout_constraintBottom_toBottomOf="@+id/kursi_B"
+                app:layout_constraintEnd_toStartOf="@+id/seat_B4"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toEndOf="@+id/kursi_B"
+                app:layout_constraintTop_toTopOf="@+id/kursi_B"
+                app:setDrawable="@{viewModel.rowB.seatThree.isBooked}" />
+
+            <ImageView
+                android:id="@+id/seat_A1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/kursi_kosong"
+                app:layout_constraintBottom_toBottomOf="@+id/seat_A2"
+                app:layout_constraintEnd_toStartOf="@+id/seat_A2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/seat_A2"
+                app:setDrawable="@{viewModel.rowA.seatOne.isBooked}"
+                android:onClick="@{() -> viewModel.buyTiket(viewModel.rowA.seatOne)}"/>
+
+            <ImageView
+                android:id="@+id/seat_A2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/kursi_kosong"
+                app:layout_constraintBottom_toBottomOf="@+id/kursi_A"
+                app:layout_constraintEnd_toStartOf="@+id/kursi_A"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/seat_A1"
+                app:layout_constraintTop_toTopOf="@+id/kursi_A"
+                app:setDrawable="@{viewModel.rowA.seatTwo.isBooked}"
+                android:onClick="@{() -> viewModel.buyTiket(viewModel.rowA.seatTwo)}"
+                />
+
+            <ImageView
+                android:id="@+id/seat_A3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/kursi_kosong"
+                app:layout_constraintBottom_toBottomOf="@+id/kursi_A"
+                app:layout_constraintEnd_toStartOf="@+id/seat_A4"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toEndOf="@+id/kursi_A"
+                app:layout_constraintTop_toTopOf="@+id/kursi_A"
+                app:setDrawable="@{viewModel.rowA.seatThree.isBooked}"
+                android:onClick="@{() -> viewModel.buyTiket(viewModel.rowA.seatThree)}"/>
+
+            <ImageView
+                android:id="@+id/seat_A4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/kursi_kosong"
+                app:layout_constraintBottom_toBottomOf="@+id/seat_A3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/seat_A3"
+                app:layout_constraintTop_toTopOf="@+id/seat_A3"
+                app:setDrawable="@{viewModel.rowA.seatFour.isBooked}"
+                android:onClick="@{() -> viewModel.buyTiket(viewModel.rowA.seatFour)}"/>
+
+            <TextView
+                android:id="@+id/kursi_A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="A"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/kursi_B"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.49"
+                app:layout_constraintVertical_chainStyle="spread" />
+
+            <TextView
+                android:id="@+id/kursi_B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="B"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/kursi_C"
+                app:layout_constraintEnd_toEndOf="@+id/kursi_A"
+                app:layout_constraintStart_toStartOf="@+id/kursi_A"
+                app:layout_constraintTop_toBottomOf="@+id/kursi_A" />
+
+            <TextView
+                android:id="@+id/kursi_C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="C"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/kursi_D"
+                app:layout_constraintEnd_toEndOf="@+id/kursi_B"
+                app:layout_constraintStart_toStartOf="@+id/kursi_B"
+                app:layout_constraintTop_toBottomOf="@+id/kursi_B" />
+
+            <TextView
+                android:id="@+id/kursi_D"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="D"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/kursi_C"
+                app:layout_constraintStart_toStartOf="@+id/kursi_C"
+                app:layout_constraintTop_toBottomOf="@+id/kursi_C" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <include
+            app:modelHeader="@{viewModel.headerBeli}"
+            android:id="@+id/include"
+            layout="@layout/header_beli_tiket_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_path_line_20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include" />
+
+        <include
+            android:id="@+id/include2"
+            layout="@layout/seat_information_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/obbuttonstyle.buttonpink"
+            android:onClick="@{() -> viewModel.navigatedToCheckout()}"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:foregroundGravity="center"
+            android:gravity="center|center_vertical"
+            android:text="Order"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:setBackgroundButton="@{viewModel.listBuySize}" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

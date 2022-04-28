@@ -1,0 +1,26 @@
+{
+  "seatA": [
+    {
+      "row": "A1",
+      "isBooked": 0
+    }
+  ],
+  "seatB": [
+    {
+      "row": "B1",
+      "isBooked": 0
+    }
+  ],
+  "seatC": [
+    {
+      "row": "C1",
+      "isBooked": 0
+    }
+  ],
+  "seatD": [
+    {
+      "row": "D1",
+      "isBooked": 0
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_page_navigation"
+        android:icon="@drawable/menu_home_selector"
+        android:title="Home" />
+    <item
+        android:id="@+id/tiket_page_navigation"
+        android:icon="@drawable/menu_ticket_selector"
+        android:title="Ticket" />
+    <!--<item
+        android:id="@+id/profile_page_navigation"
+        android:icon="@drawable/menu_setting_selector"
+        android:title="Setting" />-->
+</menu>

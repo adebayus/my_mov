@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tiket_page_navigation"
+    app:startDestination="@id/ticketFragment">
+
+    <fragment
+        android:id="@+id/ticketFragment"
+        android:name="com.sebade.relasiroom.ui.ticket.TicketFragment"
+        android:label="fragment_ticket"
+        tools:layout="@layout/fragment_ticket" >
+        <action
+            android:id="@+id/action_ticketFragment_to_detailTiketFragment"
+            app:destination="@id/detailTiketFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailTiketFragment"
+        android:name="com.sebade.relasiroom.ui.ticket.detailtiket.DetailTiketFragment"
+        android:label="DetailTiketFragment" >
+        <argument
+            android:name="detailFilm"
+            app:argType="com.sebade.relasiroom.model.HistoryFilm" />
+    </fragment>
+</navigation>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MovieApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="obone_subtext">Lebih mudah untuk mengetahui film yang sedang tampil</string>
+    <string name="lewati_perkenalan">Lewati Perkenalan</string>
+    <string name="lanjutkan">Lanjutkan</string>
+    <string name="pre_sale">Pre Sale</string>
+    <string name="obtwo_subtext">Tidak khawatir ketinggalan update film terbaru</string>
+    <string name="cashless">Cashless</string>
+    <string name="obthree_subtext">Gunakan e-wallet untuk transaksi tiket nonton</string>
+    <string name="sign_in">Sign In</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="Sign_up">Sign Up</string>
+</resources>

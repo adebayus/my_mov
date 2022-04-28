@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout_padding">16dp</dimen>
+    <dimen name="ob_image_size">200dp</dimen>
+
+    <dimen name="ob_textheader">24sp</dimen>
+    <dimen name="ob_textsubheader">16sp</dimen>
+
+    <dimen name="obbuttonheight">50dp</dimen>
+    <dimen name="padding_auth_screen">24dp</dimen>
+
+    <dimen name="spaceRvItem">16dp</dimen>
+
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/drawable-v24/menu_home_selector.xml" value="0.1585" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/drawable/background_blue_corner_round_button.xml" value="0.1" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/drawable/background_gray_corner_round_button.xml" value="0.1145" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/drawable/blue_rectangle_rounded_corner_bottom.xml" value="0.1155" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/drawable/ic_event_seat_24px.xml" value="0.1" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/drawable/kursi_kosong.xml" value="0.1155" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/drawable/kursi_terisi.xml" value="0.1155" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/drawable/kursi_terpilih.xml" value="0.116" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/drawable/menu_home_selector.xml" value="0.1" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/drawable/shape_rectangle_circle.xml" value="0.1655" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/drawable/shape_stroke_dashed.xml" value="0.1015" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/layout/activity_host_navigation.xml" value="0.1" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/layout/backdrop_loading_layout.xml" value="0.13353825136612021" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/layout/checkout_item_layout.xml" value="0.22" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/layout/coming_soon_layout_item.xml" value="0.22" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/layout/dashboard_user_detail.xml" value="0.17889492753623187" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/layout/detail_order_date.xml" value="0.10587431693989072" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/layout/detail_order_date_layout.xml" value="0.22" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/layout/fragment_blank.xml" value="0.1" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/layout/fragment_checkout.xml" value="0.12208121827411167" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/layout/fragment_checkout_success.xml" value="0.13353825136612021" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/layout/fragment_choose_seat.xml" value="0.12962962962962962" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/layout/fragment_dashboard.xml" value="0.17889492753623187" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/layout/fragment_detail_film.xml" value="0.18297101449275363" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/layout/fragment_detail_tiket.xml" value="0.1718683197947841" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/layout/fragment_first.xml" value="0.1" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/layout/fragment_login_page.xml" value="0.25" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/layout/fragment_on_boarding_one.xml" value="0.22" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/layout/fragment_on_boarding_three.xml" value="0.17798913043478262" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/layout/fragment_on_boarding_two.xml" value="0.17798913043478262" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/layout/fragment_photo_screen.xml" value="0.11" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/layout/fragment_register_page.xml" value="0.1718683197947841" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/layout/fragment_sign_up.xml" value="0.209375" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/layout/fragment_splash.xml" value="0.10960144927536232" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/layout/fragment_splash_screen.xml" value="0.17844202898550723" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/layout/fragment_ticket.xml" value="0.13353825136612021" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/layout/header_beli_tiket_layout.xml" value="0.25" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/layout/now_playing_layout_item.xml" value="0.17889492753623187" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/layout/seat_information_layout.xml" value="0.5" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/layout/who_played_layout_item.xml" value="0.22" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/menu/bottom_menu_item.xml" value="0.209375" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/menu/test_bottom_menu_item.xml" value="0.209375" />
+        <entry key="..\:/Udacity Google Android NanoDegree/RelasiRoom/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.12208121827411167" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

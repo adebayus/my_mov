@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_page_navigation"
+    app:startDestination="@id/dashboardFragment">
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.sebade.relasiroom.ui.homepage.dashboard.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_detailFilmFragment"
+            app:destination="@id/detailFilmFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFilmFragment"
+        android:name="com.sebade.relasiroom.ui.homepage.detailfilm.DetailFilmFragment"
+        android:label="DetailFilmFragment" >
+        <argument
+            android:name="primaryKey"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_detailFilmFragment_to_chooseSeatFragment"
+            app:destination="@id/chooseSeatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseSeatFragment"
+        android:name="com.sebade.relasiroom.ui.homepage.choseseat.ChooseSeatFragment"
+        android:label="ChooseSeatFragment" >
+        <argument
+            android:name="film"
+            app:argType="com.sebade.relasiroom.network.FilmItem"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_chooseSeatFragment_to_checkoutFragment"
+            app:destination="@id/checkoutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCheckoutSuccess"
+        android:name="com.sebade.relasiroom.ui.homepage.checkout.checkoutsuccess.FragmentCheckoutSuccess"
+        android:label="fragment_checkout_success"
+        tools:layout="@layout/fragment_checkout_success" >
+        <action
+            android:id="@+id/action_fragmentCheckoutSuccess_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:popUpTo="@id/dashboardFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_fragmentCheckoutSuccess_to_detailTiketFragment2"
+            app:destination="@id/detailTiketFragment2"
+            app:popUpTo="@id/dashboardFragment" />
+        <argument
+            android:name="historyFilm"
+            app:argType="com.sebade.relasiroom.model.HistoryFilm" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailTiketFragment2"
+        android:name="com.sebade.relasiroom.ui.ticket.detailtiket.DetailTiketFragment"
+        android:label="DetailTiketFragment" >
+        <argument
+            android:name="detailFilm"
+            app:argType="com.sebade.relasiroom.model.HistoryFilm" />
+    </fragment>
+    <fragment
+        android:id="@+id/checkoutFragment"
+        android:name="com.sebade.relasiroom.ui.homepage.checkout.CheckoutFragment"
+        android:label="fragment_checkout"
+        tools:layout="@layout/fragment_checkout">
+        <argument
+            android:name="listFilm"
+            app:argType="com.sebade.relasiroom.model.seat.SeatDetail[]" />
+        <action
+            android:id="@+id/action_checkoutFragment_to_fragmentCheckoutSuccess"
+            app:destination="@id/fragmentCheckoutSuccess"
+            app:popUpTo="@id/dashboardFragment"
+            app:popUpToInclusive="false" />
+        <argument
+            android:name="idFilm"
+            app:argType="com.sebade.relasiroom.network.FilmItem"
+            app:nullable="true" />
+    </fragment>
+    <!--<navigation android:id="@+id/navigation2"
+        app:startDestination="@id/navigation">
+        <navigation
+            android:id="@+id/navigation"
+            app:startDestination="@id/checkoutFragment">
+            <navigation android:id="@+id/navigation3"
+                app:startDestination="@id/checkoutFragment">
+                <fragment
+                    android:id="@+id/checkoutFragment"
+                    android:name="com.sebade.relasiroom.ui.homepage.checkout.CheckoutFragment"
+                    android:label="fragment_checkout"
+                    tools:layout="@layout/fragment_checkout">
+                    <argument
+                        android:name="listFilm"
+                        app:argType="com.sebade.relasiroom.model.seat.SeatDetail[]" />
+                    <action
+                        android:id="@+id/action_checkoutFragment_to_fragmentCheckoutSuccess"
+                        app:destination="@id/fragmentCheckoutSuccess"
+                        app:popUpTo="@id/dashboardFragment"
+                        app:popUpToInclusive="false" />
+                    <argument
+                        android:name="idFilm"
+                        app:argType="com.sebade.relasiroom.network.FilmItem"
+                        app:nullable="true" />
+                </fragment>
+            </navigation>
+        </navigation>
+    </navigation>-->
+    <fragment
+        android:id="@+id/checkoutFragment2"
+        android:name="com.sebade.relasiroom.ui.homepage.checkout.CheckoutFragment"
+        android:label="CheckoutFragment" />
+</navigation>
